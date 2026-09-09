@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VizFinder is temporarily offline.">
+  <title>VizFinder — Temporarily Offline</title>
+
+  <style>
+    :root {
+      --vizofinder-navy: #124959;
+      --vizofinder-teal: #3B8490;
+      --white: #ffffff;
+      --soft-bg: #f5f9fa;
+      --text: #17333b;
+      --muted: #61777d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% 15%, rgba(59, 132, 144, 0.12), transparent 35%),
+        linear-gradient(180deg, var(--soft-bg) 0%, var(--white) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .page {
+      width: min(900px, 100%);
+      text-align: center;
+    }
+
+    .logo {
+      width: min(700px, 92vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 54px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(18, 73, 89, 0.10);
+      border-radius: 22px;
+      padding: clamp(38px, 7vw, 68px) clamp(24px, 7vw, 72px);
+      box-shadow: 0 18px 50px rgba(18, 73, 89, 0.10);
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 26px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: var(--vizofinder-navy);
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      color: var(--vizofinder-navy);
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+    }
+
+    p {
+      margin: 0 auto;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: clamp(17px, 2.5vw, 20px);
+      line-height: 1.65;
+    }
+
+    .accent {
+      width: 72px;
+      height: 4px;
+      margin: 30px auto 0;
+      border-radius: 99px;
+      background: var(--vizofinder-teal);
+    }
+
+    footer {
+      margin-top: 28px;
+      color: rgba(23, 51, 59, 0.55);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 22px 16px;
+      }
+
+      .logo {
+        margin-bottom: 34px;
+      }
+
+      .card {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <img
+      class="logo"
+      src="C:\Users\chris\OneDrive\Desktop\vizfinder temp\Single Line.png"
+      alt="VizFinder"
+    >
+
+    <section class="card" aria-labelledby="offline-title">
+      <div class="icon" aria-hidden="true">!</div>
+
+      <p>
+        The VizFinder website is temporarily offline while we make some
+        improvements. Please check back soon.
+      </p>
+
+      <div class="accent" aria-hidden="true"></div>
+    </section>
+
+    <footer>
+      Thank you for your patience.
+    </footer>
+  </main>
+</body>
+</html>
